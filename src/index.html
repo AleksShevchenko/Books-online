@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>main</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/icons/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/icons/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/icons/favicons/manifest.json">
+    <link rel="mask-icon" href="img/icons/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- open graph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="---">
+    <meta property="og:description" content="---">
+    <meta property="og:image" content="---">
+    <meta property="og:url" content="---">
+    <meta name="twitter:image" content="---">
+    <meta name="twitter:title" content="---">
+    <meta name="twitter:url" content="---">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="---">
+    <link rel="stylesheet" href="external/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/concated.css">
+  </head>
+  <body>
+    <noscript>
+      <h2>Your browser does not support JavaScript!</h2>
+    </noscript>
+    <section class="header">
+      <div class="top-line">
+        <div class="container">
+          <div class="inline-layout col-2">
+            <div class="brand-holder"><a href="#">Books-online</a>
+              <ul class="socials-holder">
+                                <li><a href="#"><img src="img/icons/vk.png" alt="img/icons/vk.png"></a></li>
+                                <li><a href="#"><img src="img/icons/twitter.png" alt="img/icons/twitter.png"></a></li>
+                                <li><a href="#"><img src="img/icons/odnoklasniki.png" alt="img/icons/odnoklasniki.png"></a></li>
+                                <li><a href="#"><img src="img/icons/instagram.png" alt="img/icons/instagram.png"></a></li>
+                                <li><a href="#"><img src="img/icons/google+.png" alt="img/icons/google+.png"></a></li>
+                                <li><a href="#"><img src="img/icons/facebook.png" alt="img/icons/facebook.png"></a></li>
+              </ul>
+            </div>
+            <div class="admin-panel">
+              <ul>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/icons/login.png" alt=""></div><span>Вход</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/icons/bookmarks.png" alt=""></div><span>В закладки	</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/icons/add-book.png" alt=""></div><span>Добавить книгу</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-holder">
+        <div class="container"><a href="#" id="mobile-nav-btn" class="mobile-nav-btn"><span></span><span></span><span></span></a>
+          <nav class="nav">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Ayдиокниги</a></li>
+              <li><a href="#">TOП 100</a></li>
+              <li><a href="#">Подборки</a></li>
+              <li><a href="#">Новинки</a></li>
+            </ul>
+          </nav>
+          <nav id="nav" class="nav mobile">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Ayдиокниги</a></li>
+              <li><a href="#">TOП 100</a></li>
+              <li><a href="#">Подборки</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li>
+                <div class="search-holder mobile">
+                  <input type="text" placeholder="Введите запрос"><a href="#"><img src="img/icons/icon_zoom-copy.png" alt=""></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="search-holder">
+            <input type="text" placeholder="Введите запрос"><a href="#"><img src="img/icons/icon_zoom-copy.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="breadcrumbs-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="" class="disabled">Главная &#62;</a></li>
+          <li><a href="">Любовные романы &#62;</a></li>
+          <li><a href="">Отбор &#62;</a></li>
+          <li><a href="">Отзивы</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="black-plate"></div>
+    <section class="content">
+      <div class="container">
+        <div class="content-body inline-layout">
+          <div id="aside-open" class="aside-open"></div>
+          <div id="aside-panel" class="aside-panel">
+            <div id="aside-slose" class="close-btn"></div>
+            <div class="genre">
+              <h2>Выбрать книгу по жанру</h2>
+              <ul id="genre-list" class="genre-list">
+                <li><a href="">Детективы и боевики</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Детские</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Документальное</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Дом и семья</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Компьютеры и интернет</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Любовные романы</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Научно образовательная</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Неизвестно</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Поэзия и драматургия</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Приключения</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Проза</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Старинная литература</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Фантастика</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Экономика</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Эротика</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Юмор</a>
+                  <ul>
+                    <li><a href="">Детская образовательная</a></li>
+                    <li><a href="">Детские стихи</a></li>
+                    <li><a href="">Детские: прочее</a></li>
+                    <li><a href="">Сказки</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-1">
+              <h3>Популярные Авторы</h3>
+              <ul>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/auhtor-1.png" alt=""></div>
+                    <p>Стивен Кинг</p><span>176 книг</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/auhtor-2.png" alt=""></div>
+                    <p>Джорджо Мойес</p><span>176 книг</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/auhtor-3.png" alt=""></div>
+                    <p>Макс Фрай</p><span>176 книг</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/auhtor-4.png" alt=""></div>
+                    <p>Ли Чайлд</p><span>176 книг</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/auhtor-5.png" alt=""></div>
+                    <p>Анджей Сапковский</p><span>176 книг</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/auhtor-6.png" alt=""></div>
+                    <p>Харуки Мураками</p><span>176 книг</span></a></li>
+              </ul>
+            </div>
+            <div class="panel-1 announc">
+              <h3>Анонс</h3>
+              <ul>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/anounc-1.png" alt=""></div>
+                    <p>Что сделала бы Грейс?</p><span>Джина Маккинон</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/anounc-2.png" alt=""></div>
+                    <p>Леди из "Миссолонги"</p><span>Колин Маккалоу</span></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/anounc-3.png" alt=""></div>
+                    <p>Отбор</p><span>Кира Касс</span></a></li>
+              </ul>
+            </div>
+            <div class="panel-1 popul">
+              <h3>Популярные Статьи</h3>
+              <ul>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/pop-1.png" alt=""></div><span>9 декабря 2016</span>
+                    <p>Какой формат книг вам подходит?</p></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/pop-2.png" alt=""></div><span>1 декабля 2016</span>
+                    <p>5 самых лучших книг, которые стоит прочитать зимними вечерами</p></a></li>
+                <li><a href="#">
+                    <div class="image-holder"><img src="img/content/pop-3.png" alt=""></div><span>26 ноября 2016</span>
+                    <p>Топ-20 книг, о прочтении которых лгут чаще всего</p></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-holder">
+            <div class="gen-line">
+              <h4>Детские</h4>
+              <div class="top-sort">
+                <ul>
+                  <li><a href="#">Подборки</a></li>
+                  <li><a href="#">Топ 100</a></li>
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="#">Популярные</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="filters-holder">
+              <h5>Поиск автора книги:</h5>
+              <div id="sort-holder" class="sort-holder">
+                <p>Сортировать как: <span id="holderTarg"> по новизне</span></p>
+                <ul class="sort-menu">
+                  <li><a href="#">По популярности</a></li>
+                  <li><a href="#">По новизне</a></li>
+                  <li><a href="#">По оценке</a></li>
+                </ul>
+              </div>
+              <div class="abc-list">
+                <ul>
+                  <li><a href="">A</a></li>
+                  <li><a href="">Б</a></li>
+                  <li><a href="">В</a></li>
+                  <li><a href="">Г</a></li>
+                  <li><a href="">Д</a></li>
+                  <li><a href="">Е</a></li>
+                  <li><a href="">Ж</a></li>
+                  <li><a href="">З</a></li>
+                  <li><a href="">И</a></li>
+                  <li><a href="">Й</a></li>
+                  <li><a href="">К</a></li>
+                  <li><a href="">Л</a></li>
+                  <li><a href="">М</a></li>
+                  <li><a href="">Н</a></li>
+                  <li><a href="">О</a></li>
+                  <li><a href="">П</a></li>
+                  <li><a href="">Р</a></li>
+                  <li><a href="">С</a></li>
+                  <li><a href="">Т</a></li>
+                  <li><a href="">У</a></li>
+                  <li><a href="">Ф</a></li>
+                  <li><a href="">Х</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">A</a></li>
+                  <li><a href="">B</a></li>
+                  <li><a href="">C</a></li>
+                  <li><a href="">D</a></li>
+                  <li><a href="">E</a></li>
+                  <li><a href="">F</a></li>
+                  <li><a href="">G</a></li>
+                  <li><a href="">H</a></li>
+                  <li><a href="">I</a></li>
+                  <li><a href="">J</a></li>
+                  <li><a href="">K</a></li>
+                  <li><a href="">L</a></li>
+                  <li><a href="">M</a></li>
+                  <li><a href="">N</a></li>
+                  <li><a href="">O</a></li>
+                  <li><a href="">P</a></li>
+                  <li><a href="">Q</a></li>
+                  <li><a href="">R</a></li>
+                  <li><a href="">S</a></li>
+                  <li><a href="">T</a></li>
+                  <li><a href="">V</a></li>
+                  <li><a href="">Х</a></li>
+                  <li><a href="">Y</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="library-list">
+              <div class="inline-layout col-2">
+                <div class="lib-col">
+                  <div class="lib-item">
+                    <div class="head">
+                      <div class="image-holder"><img src="img/content/photo_book-1.png" alt=""></div>
+                      <h5>Лолита</h5>
+                      <div class="star-rating">
+                        <div class="star-rating__wrap">
+                          <input id="star-rating-5" type="radio" name="rating" value="5" class="star-rating__input">
+                          <label for="star-rating-5" title="5 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-4" type="radio" name="rating" value="4" class="star-rating__input">
+                          <label for="star-rating-4" title="4 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-3" type="radio" name="rating" value="3" class="star-rating__input">
+                          <label for="star-rating-3" title="3 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-2" type="radio" name="rating" value="2" class="star-rating__input">
+                          <label for="star-rating-2" title="2 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-1" type="radio" name="rating" value="1" class="star-rating__input">
+                          <label for="star-rating-1" title="1 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                        </div>
+                      </div>
+                      <ul class="book-des">
+                        <li>
+                          <p>Автор: <span>Кира Касс</span></p>
+                        </li>
+                        <li>
+                          <p>Жанр: <span>Сказки</span></p>
+                        </li>
+                        <li>
+                          <p>Дата добавления: <span>15/11/2014</span></p>
+                        </li>
+                        <li>
+                          <p>Языки книги: <span>Русский</span></p>
+                        </li>
+                        <li>
+                          <p>Кол-во страниц: <span>430</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Главная героиня, Америка Сингер, стала одной из тридцати пяти девушек, отобранных для участия в "соревнованиях" за сердце принца Максона и возможность стать будущей королевой и жить в...</p>
+                    </div>
+                    <div class="btns"><a href="#" class="button">Читать</a><a href="#">В избранное</a><a href="#">О книге</a></div>
+                  </div>
+                </div>
+                <div class="lib-col">
+                  <div class="lib-item">
+                    <div class="head">
+                      <div class="image-holder"><img src="img/content/photo_book-2.png" alt=""></div>
+                      <h5>Лолита</h5>
+                      <div class="star-rating">
+                        <div class="star-rating__wrap">
+                          <input id="star-rating-5" type="radio" name="rating" value="5" class="star-rating__input">
+                          <label for="star-rating-5" title="5 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-4" type="radio" name="rating" value="4" class="star-rating__input">
+                          <label for="star-rating-4" title="4 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-3" type="radio" name="rating" value="3" class="star-rating__input">
+                          <label for="star-rating-3" title="3 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-2" type="radio" name="rating" value="2" class="star-rating__input">
+                          <label for="star-rating-2" title="2 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-1" type="radio" name="rating" value="1" class="star-rating__input">
+                          <label for="star-rating-1" title="1 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                        </div>
+                      </div>
+                      <ul class="book-des">
+                        <li>
+                          <p>Автор: <span>Кира Касс</span></p>
+                        </li>
+                        <li>
+                          <p>Жанр: <span>Сказки</span></p>
+                        </li>
+                        <li>
+                          <p>Дата добавления: <span>15/11/2014</span></p>
+                        </li>
+                        <li>
+                          <p>Языки книги: <span>Русский</span></p>
+                        </li>
+                        <li>
+                          <p>Кол-во страниц: <span>430</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Главная героиня, Америка Сингер, стала одной из тридцати пяти девушек, отобранных для участия в "соревнованиях" за сердце принца Максона и возможность стать будущей королевой и жить в...</p>
+                    </div>
+                    <div class="btns"><a href="#" class="button">Читать</a><a href="#">В избранное</a><a href="#">О книге</a></div>
+                  </div>
+                </div>
+                <div class="lib-col">
+                  <div class="lib-item">
+                    <div class="head">
+                      <div class="image-holder"><img src="img/content/photo_book-3.png" alt=""></div>
+                      <h5>Лолита</h5>
+                      <div class="star-rating">
+                        <div class="star-rating__wrap">
+                          <input id="star-rating-5" type="radio" name="rating" value="5" class="star-rating__input">
+                          <label for="star-rating-5" title="5 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-4" type="radio" name="rating" value="4" class="star-rating__input">
+                          <label for="star-rating-4" title="4 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-3" type="radio" name="rating" value="3" class="star-rating__input">
+                          <label for="star-rating-3" title="3 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-2" type="radio" name="rating" value="2" class="star-rating__input">
+                          <label for="star-rating-2" title="2 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-1" type="radio" name="rating" value="1" class="star-rating__input">
+                          <label for="star-rating-1" title="1 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                        </div>
+                      </div>
+                      <ul class="book-des">
+                        <li>
+                          <p>Автор: <span>Кира Касс</span></p>
+                        </li>
+                        <li>
+                          <p>Жанр: <span>Сказки</span></p>
+                        </li>
+                        <li>
+                          <p>Дата добавления: <span>15/11/2014</span></p>
+                        </li>
+                        <li>
+                          <p>Языки книги: <span>Русский</span></p>
+                        </li>
+                        <li>
+                          <p>Кол-во страниц: <span>430</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Главная героиня, Америка Сингер, стала одной из тридцати пяти девушек, отобранных для участия в "соревнованиях" за сердце принца Максона и возможность стать будущей королевой и жить в...</p>
+                    </div>
+                    <div class="btns"><a href="#" class="button">Читать</a><a href="#">В избранное</a><a href="#">О книге</a></div>
+                  </div>
+                </div>
+                <div class="lib-col">
+                  <div class="lib-item">
+                    <div class="head">
+                      <div class="image-holder"><img src="img/content/photo_book-4.png" alt=""></div>
+                      <h5>Лолита</h5>
+                      <div class="star-rating">
+                        <div class="star-rating__wrap">
+                          <input id="star-rating-5" type="radio" name="rating" value="5" class="star-rating__input">
+                          <label for="star-rating-5" title="5 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-4" type="radio" name="rating" value="4" class="star-rating__input">
+                          <label for="star-rating-4" title="4 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-3" type="radio" name="rating" value="3" class="star-rating__input">
+                          <label for="star-rating-3" title="3 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-2" type="radio" name="rating" value="2" class="star-rating__input">
+                          <label for="star-rating-2" title="2 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-1" type="radio" name="rating" value="1" class="star-rating__input">
+                          <label for="star-rating-1" title="1 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                        </div>
+                      </div>
+                      <ul class="book-des">
+                        <li>
+                          <p>Автор: <span>Кира Касс</span></p>
+                        </li>
+                        <li>
+                          <p>Жанр: <span>Сказки</span></p>
+                        </li>
+                        <li>
+                          <p>Дата добавления: <span>15/11/2014</span></p>
+                        </li>
+                        <li>
+                          <p>Языки книги: <span>Русский</span></p>
+                        </li>
+                        <li>
+                          <p>Кол-во страниц: <span>430</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Главная героиня, Америка Сингер, стала одной из тридцати пяти девушек, отобранных для участия в "соревнованиях" за сердце принца Максона и возможность стать будущей королевой и жить в...</p>
+                    </div>
+                    <div class="btns"><a href="#" class="button">Читать</a><a href="#">В избранное</a><a href="#">О книге</a></div>
+                  </div>
+                </div>
+                <div class="lib-col">
+                  <div class="lib-item">
+                    <div class="head">
+                      <div class="image-holder"><img src="img/content/photo_book-5.png" alt=""></div>
+                      <h5>Лолита</h5>
+                      <div class="star-rating">
+                        <div class="star-rating__wrap">
+                          <input id="star-rating-5" type="radio" name="rating" value="5" class="star-rating__input">
+                          <label for="star-rating-5" title="5 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-4" type="radio" name="rating" value="4" class="star-rating__input">
+                          <label for="star-rating-4" title="4 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-3" type="radio" name="rating" value="3" class="star-rating__input">
+                          <label for="star-rating-3" title="3 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-2" type="radio" name="rating" value="2" class="star-rating__input">
+                          <label for="star-rating-2" title="2 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-1" type="radio" name="rating" value="1" class="star-rating__input">
+                          <label for="star-rating-1" title="1 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                        </div>
+                      </div>
+                      <ul class="book-des">
+                        <li>
+                          <p>Автор: <span>Кира Касс</span></p>
+                        </li>
+                        <li>
+                          <p>Жанр: <span>Сказки</span></p>
+                        </li>
+                        <li>
+                          <p>Дата добавления: <span>15/11/2014</span></p>
+                        </li>
+                        <li>
+                          <p>Языки книги: <span>Русский</span></p>
+                        </li>
+                        <li>
+                          <p>Кол-во страниц: <span>430</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Главная героиня, Америка Сингер, стала одной из тридцати пяти девушек, отобранных для участия в "соревнованиях" за сердце принца Максона и возможность стать будущей королевой и жить в...</p>
+                    </div>
+                    <div class="btns"><a href="#" class="button">Читать</a><a href="#">В избранное</a><a href="#">О книге</a></div>
+                  </div>
+                </div>
+                <div class="lib-col">
+                  <div class="lib-item">
+                    <div class="head">
+                      <div class="image-holder"><img src="img/content/photo_book-6.png" alt=""></div>
+                      <h5>Лолита</h5>
+                      <div class="star-rating">
+                        <div class="star-rating__wrap">
+                          <input id="star-rating-5" type="radio" name="rating" value="5" class="star-rating__input">
+                          <label for="star-rating-5" title="5 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-4" type="radio" name="rating" value="4" class="star-rating__input">
+                          <label for="star-rating-4" title="4 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-3" type="radio" name="rating" value="3" class="star-rating__input">
+                          <label for="star-rating-3" title="3 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-2" type="radio" name="rating" value="2" class="star-rating__input">
+                          <label for="star-rating-2" title="2 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-1" type="radio" name="rating" value="1" class="star-rating__input">
+                          <label for="star-rating-1" title="1 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                        </div>
+                      </div>
+                      <ul class="book-des">
+                        <li>
+                          <p>Автор: <span>Кира Касс</span></p>
+                        </li>
+                        <li>
+                          <p>Жанр: <span>Сказки</span></p>
+                        </li>
+                        <li>
+                          <p>Дата добавления: <span>15/11/2014</span></p>
+                        </li>
+                        <li>
+                          <p>Языки книги: <span>Русский</span></p>
+                        </li>
+                        <li>
+                          <p>Кол-во страниц: <span>430</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Главная героиня, Америка Сингер, стала одной из тридцати пяти девушек, отобранных для участия в "соревнованиях" за сердце принца Максона и возможность стать будущей королевой и жить в...</p>
+                    </div>
+                    <div class="btns"><a href="#" class="button">Читать</a><a href="#">В избранное</a><a href="#">О книге</a></div>
+                  </div>
+                </div>
+                <div class="lib-col">
+                  <div class="lib-item">
+                    <div class="head">
+                      <div class="image-holder"><img src="img/content/photo_book-7.png" alt=""></div>
+                      <h5>Лолита</h5>
+                      <div class="star-rating">
+                        <div class="star-rating__wrap">
+                          <input id="star-rating-5" type="radio" name="rating" value="5" class="star-rating__input">
+                          <label for="star-rating-5" title="5 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-4" type="radio" name="rating" value="4" class="star-rating__input">
+                          <label for="star-rating-4" title="4 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-3" type="radio" name="rating" value="3" class="star-rating__input">
+                          <label for="star-rating-3" title="3 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-2" type="radio" name="rating" value="2" class="star-rating__input">
+                          <label for="star-rating-2" title="2 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-1" type="radio" name="rating" value="1" class="star-rating__input">
+                          <label for="star-rating-1" title="1 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                        </div>
+                      </div>
+                      <ul class="book-des">
+                        <li>
+                          <p>Автор: <span>Кира Касс</span></p>
+                        </li>
+                        <li>
+                          <p>Жанр: <span>Сказки</span></p>
+                        </li>
+                        <li>
+                          <p>Дата добавления: <span>15/11/2014</span></p>
+                        </li>
+                        <li>
+                          <p>Языки книги: <span>Русский</span></p>
+                        </li>
+                        <li>
+                          <p>Кол-во страниц: <span>430</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Главная героиня, Америка Сингер, стала одной из тридцати пяти девушек, отобранных для участия в "соревнованиях" за сердце принца Максона и возможность стать будущей королевой и жить в...</p>
+                    </div>
+                    <div class="btns"><a href="#" class="button">Читать</a><a href="#">В избранное</a><a href="#">О книге</a></div>
+                  </div>
+                </div>
+                <div class="lib-col">
+                  <div class="lib-item">
+                    <div class="head">
+                      <div class="image-holder"><img src="img/content/photo_book-8.png" alt=""></div>
+                      <h5>Лолита</h5>
+                      <div class="star-rating">
+                        <div class="star-rating__wrap">
+                          <input id="star-rating-5" type="radio" name="rating" value="5" class="star-rating__input">
+                          <label for="star-rating-5" title="5 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-4" type="radio" name="rating" value="4" class="star-rating__input">
+                          <label for="star-rating-4" title="4 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-3" type="radio" name="rating" value="3" class="star-rating__input">
+                          <label for="star-rating-3" title="3 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-2" type="radio" name="rating" value="2" class="star-rating__input">
+                          <label for="star-rating-2" title="2 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                          <input id="star-rating-1" type="radio" name="rating" value="1" class="star-rating__input">
+                          <label for="star-rating-1" title="1 out of 5 stars" class="star-rating__ico fa fa-star-o fa-lg"></label>
+                        </div>
+                      </div>
+                      <ul class="book-des">
+                        <li>
+                          <p>Автор: <span>Кира Касс</span></p>
+                        </li>
+                        <li>
+                          <p>Жанр: <span>Сказки</span></p>
+                        </li>
+                        <li>
+                          <p>Дата добавления: <span>15/11/2014</span></p>
+                        </li>
+                        <li>
+                          <p>Языки книги: <span>Русский</span></p>
+                        </li>
+                        <li>
+                          <p>Кол-во страниц: <span>430</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <p>Главная героиня, Америка Сингер, стала одной из тридцати пяти девушек, отобранных для участия в "соревнованиях" за сердце принца Максона и возможность стать будущей королевой и жить в...</p>
+                    </div>
+                    <div class="btns"><a href="#" class="button">Читать</a><a href="#">В избранное</a><a href="#">О книге</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-holder">
+              <ul class="pagination">
+                <li><a href="#" class="prev"></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">1728</a></li>
+                <li><a href="#" class="next"></a></li>
+              </ul>
+              <div class="to-page">
+                <form action="">
+                  <input type="text"><a href="#">Перейти</a>
+                </form>
+              </div>
+            </div>
+            <div class="sale">
+              <div class="inline-layout col-4">
+                <div class="sale-col">
+                  <div class="sale-item">
+                    <div class="image-holder"><img src="img/content/sale-1.png" alt=""></div>
+                    <div class="description">
+                      <p>Распродажа качественной женской обуви.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sale-col">
+                  <div class="sale-item">
+                    <div class="image-holder"><img src="img/content/sale-2.png" alt=""></div>
+                    <div class="description">
+                      <p>Распродажа качественной женской обуви.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sale-col">
+                  <div class="sale-item">
+                    <div class="image-holder"><img src="img/content/sale-3.png" alt=""></div>
+                    <div class="description">
+                      <p>Распродажа качественной женской обуви.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sale-col">
+                  <div class="sale-item">
+                    <div class="image-holder"><img src="img/content/sale-4.png" alt=""></div>
+                    <div class="description">
+                      <p>Распродажа качественной женской обуви.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="footer-description">
+          <div class="brand-holder"><a href="#">Books-online</a></div>
+          <p>Несмотря на то, что в наши дни Интернет уверенно набирает позиции, все больше образованных и интеллигентных людей предпочитают проводить свободное время за чтением книг. Наш сайт предлагает совместить инновации «всемирной паутины» с «поглощением» литературных шедевров. Здесь Вы можете совершенно бесплатно и без регистрации читать онлайн как классические, так и современные тексты.</p>
+          <div class="metrics">
+            <div class="image-holder"><img src="img/content/metrics.png" alt=""></div>
+          </div>
+          <div class="footer-search">
+            <form action="">
+              <h4>Подписаться на рассылку</h4>
+              <div class="search-holder">
+                <input type="text" placeholder="Введите ваш e-mail:"><a href="#">Отправить</a>
+              </div>
+              <div class="socials-holder">
+                <h4>Социальные сети</h4>
+                <ul>
+                                    <li><a href="#"><img src="img/icons/vk-green.png" alt="img/icons/vk-green.png"></a></li>
+                                    <li><a href="#"><img src="img/icons/twitter-green.png" alt="img/icons/twitter-green.png"></a></li>
+                                    <li><a href="#"><img src="img/icons/odnoklasniki-green.png" alt="img/icons/odnoklasniki-green.png"></a></li>
+                                    <li><a href="#"><img src="img/icons/instagram-green.png" alt="img/icons/instagram-green.png"></a></li>
+                                    <li><a href="#"><img src="img/icons/google+-green.png" alt="img/icons/google+-green.png"></a></li>
+                                    <li><a href="#"><img src="img/icons/facebook-green.png" alt="img/icons/facebook-green.png"></a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+          <div class="copyright">
+            <h3>Books-online 2016</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="external/jquery/dist/jquery.min.js"></script>
+    <script src="external/jquery.browser/dist/jquery.browser.min.js"></script>
+    <script src="external/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
